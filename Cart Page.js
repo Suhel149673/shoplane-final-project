@@ -1,7 +1,7 @@
 //Header Section
 document.getElementById("header").innerHTML += `
 <div id="title-wrapper">
-<div id="logo"><a href="Home Page.html" id="title"><span id="shop">SHOP</span>LANE</a></div>
+<div id="logo"><a href="index.html" id="title"><span id="shop">SHOP</span>LANE</a></div>
 <a href="">CLOTHING</a>
 <a href="">ACCESSORIES</a>
 </div>
