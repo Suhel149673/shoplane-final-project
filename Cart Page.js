@@ -1,7 +1,7 @@
 //Header Section
 document.getElementById("header").innerHTML += `
 <div id="title-wrapper">
-<div id="logo"><a href="index.html" id="title"><span id="shop">SHOP</span>LANE</a></div>
+<div id="logo"><a href="Home Page.html" id="title"><span id="shop">SHOP</span>LANE</a></div>
 <a href="">CLOTHING</a>
 <a href="">ACCESSORIES</a>
 </div>
@@ -106,10 +106,18 @@ for (var i = 0; i < differentCartItems.length; i++) {
 
 }
 
+
 function orderPlaced(){
-    localStorage.removeItem("cartProducts")
-    localStorage.removeItem("id")
-    localStorage.removeItem("cartCount")
+    if($("#differentcount").text()==0){
+        $("#href").attr("href","Cart Page.html")
+        alert("Your Cart is Empty!!")
+    }else{
+        $("#href").attr("href","Order Page.html")
+        localStorage.removeItem("cartProducts")
+        localStorage.removeItem("id")
+        localStorage.removeItem("cartCount")
+    }
+
 }
 
 //Footer Section
