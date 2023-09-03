@@ -106,7 +106,6 @@ for (var i = 0; i < differentCartItems.length; i++) {
 
 }
 
-
 function orderPlaced(){
     if($("#differentcount").text()==0){
         $("#href").attr("href","Cart Page.html")
@@ -117,7 +116,6 @@ function orderPlaced(){
         localStorage.removeItem("id")
         localStorage.removeItem("cartCount")
     }
-
 }
 
 //Footer Section
